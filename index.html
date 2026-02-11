@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Shop - Yogurt, Pan y Dulces</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER CON CARRITO -->
+    <header>
+        <div class="container">
+            <h1>Robert <span>Shop</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#yogurt" class="active">Yogurt</a></li>
+                    <li><a href="#pan">Pan</a></li>
+                    <li><a href="#dulces">Dulces</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CARRITO MODAL -->
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Los productos se renderizan aquí con JavaScript -->
+        </div>
+        <div class="cart-total">Total: $0.00</div>
+        <button class="checkout-btn">Realizar Pedido</button>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h2>Delicias Artesanales</h2>
+            <p>Yogurt natural, pan casero y dulces hechos con amor y los mejores ingredientes</p>
+            <a href="#yogurt" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN YOGURT -->
+    <section id="yogurt" class="container">
+        <h2 class="section-title">Yogurt Artesanal</h2>
+        <div class="products-grid">
+            <div class="product-card" data-id="yogurt-1">
+                <img src="images/yogurt-griego.jpg" alt="Yogurt Griego" class="product-image">
+                <div class="product-info">
+                    <h3>Yogurt Griego Natural</h3>
+                    <p>Yogurt griego 100% natural, cremoso y proteico</p>
+                    <span class="product-price">$2.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="yogurt-2">
+                <img src="images/yogurt-mermelada.jpg" alt="Yogurt con Mermelada" class="product-image">
+                <div class="product-info">
+                    <h3>Yogurt con Mermelada</h3>
+                    <p>Yogurt griego con mermelada casera de frutos rojos</p>
+                    <span class="product-price">$2.50</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="yogurt-3">
+                <img src="images/yogurt-frutas.jpg" alt="Yogurt con Frutas" class="product-image">
+                <div class="product-info">
+                    <h3>Yogurt con Frutas</h3>
+                    <p>Yogurt natural con trozos de frutas frescas</p>
+                    <span class="product-price">$2.50</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PAN -->
+    <section id="pan" class="container">
+        <h2 class="section-title">Pan Casero</h2>
+        <div class="products-grid">
+            <div class="product-card" data-id="pan-1">
+                <img src="images/pan-artesanal.jpg" alt="Pan Artesanal" class="product-image">
+                <div class="product-info">
+                    <h3>Pan Artesanal</h3>
+                    <p>Pan horneado tradicionalmente, 500g</p>
+                    <span class="product-price">$3.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="pan-2">
+                <img src="images/pan-integral.jpg" alt="Pan Integral" class="product-image">
+                <div class="product-info">
+                    <h3>Pan Integral</h3>
+                    <p>Pan 100% integral, saludable y delicioso</p>
+                    <span class="product-price">$3.50</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="pan-3">
+                <img src="images/pan-ajo.jpg" alt="Pan de Ajo" class="product-image">
+                <div class="product-info">
+                    <h3>Pan de Ajo</h3>
+                    <p>Pan con ajo tostado y hierbas aromáticas</p>
+                    <span class="product-price">$4.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DULCES -->
+    <section id="dulces" class="container">
+        <h2 class="section-title">Dulces y Postres</h2>
+        <div class="products-grid">
+            <div class="product-card" data-id="dulce-1">
+                <img src="images/galletas.jpg" alt="Galletas Caseras" class="product-image">
+                <div class="product-info">
+                    <h3>Galletas Caseras</h3>
+                    <p>Docena de galletas horneadas artesanalmente</p>
+                    <span class="product-price">$5.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="dulce-2">
+                <img src="images/brownie.jpg" alt="Brownies" class="product-image">
+                <div class="product-info">
+                    <h3>Brownies</h3>
+                    <p>Brownies de chocolate, húmedos y deliciosos</p>
+                    <span class="product-price">$2.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="dulce-3">
+                <img src="images/pastel.jpg" alt="Pasteles" class="product-image">
+                <div class="product-info">
+                    <h3>Pasteles Pequeños</h3>
+                    <p>Pasteles individuales de diferentes sabores</p>
+                    <span class="product-price">$4.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PEDIDOS -->
+    <section id="pedidos" class="container">
+        <div class="form-container">
+            <h3>¿Prefieres pedir directamente?</h3>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="products">Productos y cantidad</label>
+                    <textarea id="products" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección de entrega</label>
+                    <input type="text" id="address" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>📍 Tu tienda de delicias artesanales</p>
+            <p>📧 robert_edward@engineer.com</p>
+            <p>📱 WhatsApp: +593XXXXXXXXXX</p>
+            <p><a href="https://robert-shop.work.gd" target="_blank">robert-shop.work.gd</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/cart.js"></script>
+    <script>
+        // Formulario de contacto
+        document.getElementById('orderForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu pedido! Te contactaremos pronto.');
+            this.reset();
+        });
+
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Cerrar menú mobile si está abierto
+                    document.querySelector('.nav-menu')?.classList.remove('active');
+                    
+                    // Actualizar clase active en nav
+                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
